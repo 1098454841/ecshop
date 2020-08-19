@@ -4,4 +4,5 @@ class BasePage():
     def open(self):
         self.driver.get(self.url)
     def switch_window(self):
-        self.driver.switch_window(handles[-1])
+        handles = self.driver.window_handles
+        self.driver.switch_to.window(handles[-1])
