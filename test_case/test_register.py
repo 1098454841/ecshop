@@ -33,14 +33,16 @@ class registerTestCase(unittest.TestCase):
                              QQ,officephone,homephone,telephone,mibaodaan)
         time.sleep(3)
         print("实际结果",result)
-        print("预期结果","sanhu")
-        self.assertEqual("sanhu",result)
+        print("预期结果","sihu")
+        self.assertEqual("sihu",result)
     def test_shopping(self): #购物流程
         gs = GoShopping(self.driver)
         result = gs.shopping("衣")
         time.sleep(3)
         print("结果",result)
         self.assertEqual("收货人信息",result)
+
+
 
 
 
